@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review form</title>
+</head>
+<body style="background-color:#d5d8dc; font-family: 'Times New Roman', Times, serif">
+    <header>
+        <center>
+            <h1 style="font-family: Algerian;"><u>ONLINE FEEDBACK FORM</u></h1>
+        <P style="font-size: 20px;">
+            Thank you for taking the time to fill in our online feedback form. By providing us your feedback, you are helping us understand what we do well and what improvements we need to implement
+        </P>
+    </center>
+    </header>
+    <hr>
+    <div class="feedback">
+        <form action="/action_page.php" method="get">
+            <label for="first_name"><h3>First Name:</h3></label>
+            <input type="text" for="first_name" first_name="first_name">
+            <br>
+            <label for="last_name"><h3>Last Name:</h3></label>
+            <input type="text" for="last_name" last_name="last_name">
+            <br>
+            <label for="email"><h3>Email:</h3></label>
+            <input type="text" for="email" email="email">
+            <br>
+
+            <label for="satisfaction"><h3>How satisfied are you with content?</h3></label>
+            <br>
+            <input type="radio" id="very_satisfied" name="satisfaction" value="very_satisfied">
+            <label for="very_satisfied">Very satisfied</label>
+            <br>
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <br>
+            <input type="radio" id="fair" name="satisfaction" value="fair">
+            <label for="fair">Fair</label>
+            <br>
+            <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label>
+            <br>
+            <input type="radio" id="extremely_dissatisfied" name="satisfaction" value="extremely_dissatisfied">
+            <label for="extremely_dissatisfied">Extremely Dissatisfied</label>
+            <br>
+
+            <label for="visuals"><h3>Were visuals good?</h3></label>
+            <br>
+            <input type="radio" id="yes" name="visuals" value="yes">
+            <label for="yes">Yes</label>
+            <br>
+            <input type="radio" id="no" name="visuals" value="no">
+            <label for="no">No</label>
+            <br>
+            <label for="comments"><h3>Comments:</h3></label>
+                <br>
+            <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+            <br><br>
+            <button type="submit" class="btn btn-lg btn-warning btn-block" >Submit </button>
+        </form>
+    </div>
+</body>
+</html>
